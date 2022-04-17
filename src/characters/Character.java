@@ -6,6 +6,8 @@ public abstract class Character implements Attackable {
     protected int hp;
     protected int attackDamage = 0;
     protected int spAttackDamage = 20;
+    protected int spDefendValue;
+    protected int defendValue;
 
     public Character(int hp, int attackDamage) {
         this.hp = hp;
@@ -36,5 +38,9 @@ public abstract class Character implements Attackable {
             System.out.println("Attacked for " + baseAttackDamage + " damage");
         }
     }
+
+//    class Character implements Defendable{
+//
+//    }
 
 }
