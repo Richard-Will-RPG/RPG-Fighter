@@ -1,6 +1,5 @@
 package game;
 
-
 import characters.*;
 import characters.Character;
 import util.Input;
@@ -11,19 +10,36 @@ import java.util.Scanner;
 public class GameRunner {
 
     public static void main(String[] args) {
-        String heroChoice = Input.getString("Welcome! Please select a hero(Warrior/Knight): ");
+        System.out.println("Welcome! You have found yourself in a dual of fates.");
+        System.out.println("");
 
-        Attackable hero;
+        Rollable Character;
 
-        if (heroChoice.equalsIgnoreCase("warrior")) {
-            hero = new Warrior("Warrior");
-        } else if (heroChoice.equalsIgnoreCase("knight")) {
-            hero = new Knight("Knight");
-        }else {
-            hero = new Mage(2000, 150, "zappy boi aka Samuel Moore");
-        }
+        String p1Roll = Input.getString("Player 1 (Enemy) attacks first.  Roll Player 1 for your attack (1-20):   ");
+        int p1RollValue = Integer.valueOf(p1Roll);
 
-        hero.attack();
+        String p2Roll = Input.getString("Player 1 has initiated an attack of " + p1RollValue + ".  Player 2:  Roll for your defense (1-20):   ");
+        int p2RollValue = Integer.valueOf(p2Roll);
+
+        System.out.println("");
+        System.out.println("Player 1 attacks for " + p1RollValue + ", and Player 2 defends for " + p2RollValue + "." );
+
+
+
+
+
+
+
+
+//        if (gameStart.equalsIgnoreCase("warrior")) {
+//            hero = new Warrior("Warrior");
+//        } else if (gameStart.equalsIgnoreCase("knight")) {
+//            hero = new Knight("Knight");
+//        }else {
+//            hero = new Mage(2000, 150, "zappy boi aka Samuel Moore");
+//        }
+//
+//        hero.attack();
 
     }
 

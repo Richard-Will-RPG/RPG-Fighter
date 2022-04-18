@@ -17,11 +17,13 @@ public class Hero extends Character {
         this.name = name;
     }
 
+
     public void spAttack(){
         System.out.println("Used Special Attack for " + spAttackDamage + " damage");
     }
 
     @Override
+<<<<<<< HEAD
     public void defend() {
 
         System.out.println("Hero used defense against attack");
@@ -29,6 +31,25 @@ public class Hero extends Character {
     @Override
     public void spDefend() {
         System.out.println("Hero used special defense used against attack");
+=======
+    public void roll() {
+
+    }
+
+    @Override
+    public void compare() {
+
+    }
+
+    @Override
+    public void defend() {
+
+    }
+
+    @Override
+    public void spDefend() {
+
+>>>>>>> 0fd2ad5f8c7a4db57a3f6295a10765424700e482
     }
 }
 
