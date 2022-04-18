@@ -1,6 +1,6 @@
-package characters;
+package oop.characters;
 
-public class Hero extends Character {
+public abstract class Hero extends Character {
 
     private String name;
 
@@ -17,28 +17,9 @@ public class Hero extends Character {
         this.name = name;
     }
 
+//    public void spAttack(){
+//        System.out.println("Used Special Attack for " + spAttackDamage + " damage");
+//    }
 
-    public void spAttack(){
-        System.out.println("Used Special Attack for " + spAttackDamage + " damage");
-    }
-
-    @Override
-    public void roll() {
-
-    }
-
-    @Override
-    public void compare() {
-
-    }
-
-    @Override
-    public void defend() {
-
-    }
-
-    @Override
-    public void spDefend() {
-
-    }
+    abstract void printDialogue(String wordsToSay);
 }

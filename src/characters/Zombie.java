@@ -1,6 +1,4 @@
-package characters;
-
-import characters.Character;
+package oop.characters;
 
 public class Zombie extends Enemy {
 
@@ -19,14 +17,7 @@ public class Zombie extends Enemy {
         isRotting = rotting;
     }
 
-    @Override
-    public void attack() {
-        System.out.println("Eating brains!");
+    public void printDialogue(String wordsToSay){
+        System.out.println("boom");
     }
-
-
-
-
-
-
 }

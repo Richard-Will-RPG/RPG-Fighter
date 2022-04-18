@@ -1,6 +1,6 @@
-package characters;
+package oop.characters;
 
-import characters.Character;
+import oop.characters.Character;
 
 public class Warrior extends Hero {
 
@@ -8,10 +8,8 @@ public class Warrior extends Hero {
         super(150, 25, name);
     }
 
-    @Override
-    public void attack() {
-        System.out.println("Warrior attack!");
+    public void printDialogue(String wordsToSay){
+        System.out.println("boom");
     }
-
 
 }
