@@ -17,4 +17,23 @@ public class Enemy extends Character {
         System.out.println("Used Special Attack for " + spAttackDamage + " damage");
     }
 
+    @Override
+    public void roll() {
+
+    }
+
+    @Override
+    public void compare() {
+
+    }
+
+    @Override
+    public void defend() {
+
+    }
+
+    @Override
+    public void spDefend() {
+
+    }
 }

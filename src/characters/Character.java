@@ -1,15 +1,19 @@
 package characters;
 
-public abstract class Character implements Attackable {
+import util.Input;
+
+public abstract class Character implements Attackable, Defendable, Rollable {
 
     //    PROPERTIES ALL CHARACTERS SHARE
     protected int hp;
     protected int attackDamage = 0;
     protected int spAttackDamage = 20;
 
+
     public Character(int hp, int attackDamage) {
         this.hp = hp;
         this.attackDamage = attackDamage;
+
     }
 
     public int getHp() {
@@ -25,8 +29,10 @@ public abstract class Character implements Attackable {
     }
 
     public void setAttackDamage(int attackDamage) {
-        this.attackDamage = attackDamage;
+        this.attackDamage = spAttackDamage;
     }
+
+
 
     //    BEHAVIORS THAT ALL CHARACTERS SHARE
     public void attack() {
